@@ -6,9 +6,9 @@
 """
 servce_control allows to interact with windows / unix services
 
-Versionning semantics:
+Versioning semantics:
     Major version: backward compatibility breaking changes
-    Minor version: New functionnality
+    Minor version: New functionality
     Patch version: Backwards compatible bug fixes
 
 """

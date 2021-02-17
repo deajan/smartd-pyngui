@@ -7,9 +7,9 @@
 smartd_pyngui is an application to read S.M.A.R.T state of disks
 and output, and handle most errors that may happen
 
-Versionning semantics:
+Versioning semantics:
     Major version: backward compatibility breaking changes
-    Minor version: New functionnality
+    Minor version: New functionality
     Patch version: Backwards compatible bug fixes
 
 """
