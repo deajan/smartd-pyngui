@@ -10,7 +10,7 @@ This script generates all necessary private keys for smartd_pyngui to store it's
 
 import os
 from datetime import datetime
-from configparser_crypt.fernet_backend import ConfigParserCrypt
+from configparser_crypt import ConfigParserCrypt
 from ofunctions import revac
 
 

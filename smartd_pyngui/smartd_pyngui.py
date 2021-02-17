@@ -12,9 +12,9 @@ import re
 import json
 from command_runner.elevate import elevate
 from command_runner import command_runner
-import ofunctions
+import ofunctions.logger_utils
 from ofunctions.mailer import send_email
-from configparser_crypt.fernet_backend import ConfigParserCrypt
+from configparser_crypt import ConfigParserCrypt
 from smartmontools_wrapper import smartctl_wrapper
 from smartmontools_wrapper.smartd_config import SmartDConfiguration
 from ofunctions.service_control import system_service_handler
@@ -81,7 +81,7 @@ if os.environ.get('_DEBUG', False) == 'True':
 if IS_STABLE is False:
     DEBUGGING = True
 
-logger = ofunctions.logger_get_logger(LOG_FILE, debug=DEBUGGING)
+logger = ofunctions.logger_utils.logger_get_logger(LOG_FILE, debug=DEBUGGING)
 
 
 # ACTUAL APPLICATION ######################################################################################
